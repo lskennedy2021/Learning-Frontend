@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,68 +11,81 @@
     <link rel="icon" type="image/x-icon" href="./asset/html5_logo.png">
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
-    <h1>Learning How to Design Website!</h1>
-
-    <nav>
-        <ul>
-            <li><a href="#html">learnig HTML</a></li>
-            <li><a href="#css">Learning CSS</a></li>
-            <li><a href="#javascript">Learning JavaScript</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <h1>Learning How to Design Website!</h1>
+        <nav aria-label="main-navigation">
+            <ul>
+                <li><a href="#html">learnig HTML</a></li>
+                <li><a href="#css">Learning CSS</a></li>
+                <li><a href="#javascript">Learning JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
     <hr />
-
-    <section id="html">
-        <h2>Learnig HTML</h2>
-        <p><abbr title="Hyper Text Markup Language">HTML</abbr> is basic <em>structure</em> of a website, and its very important becuase other parts will depends on it.</p>
-        <ul>
-            <li>you can form a website with html</li>
-            <li>you can set metadate about the page</li>
-            <li>you can give sementhic meaning to your code</li>
-        </ul>
-
-        <img src="./asset/image_1.jpg" alt="nature" title="True in nature" width="488" height="325"/>
-        <ul>
-            <li><a href="https://google.com" target="_balank">Google</a></li>
-            <li><a href="./asset/image_1.jpg" download>Download Image</a></li>
-            <li><a href="mailto:mr.msnh.s@gmail.com">My Email</a></li>
-            <li><a href="tel:+989026091228">Call Me</a></li>
-        </ul>
-    </section>
-    <section id="css">
-        <h2>Learning CSS</h2>
-        <p>You can make your website <strong>pretty</strong> by adding CSS to it.</p>
-        <h3>Things you can do with CSS:</h3>
-        <ol>
-            <li>Give color and format text</li>
-            <li>Change main behavior of a element</li>
-            <li>Reshape and reorder</li>
-            <li>and ...</li>
-            <li><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></li>
-        </ol>
-    </section>
-
-    <section id="javascript">
-        <h2>Learning JavaScript</h2>
-        <dl>
-            <dt>Basic of How performe</dt>
+    <main>
+        <article>
+            <section id="html">
+                <h2>Learnig HTML</h2>
+                <p><abbr title="Hyper Text Markup Language">HTML</abbr> is basic <em>structure</em> of a website, and
+                    its
+                    very
+                    important becuase other parts will depends on it.</p>
+                <ul>
+                    <li>you can form a website with html</li>
+                    <li>you can set metadate about the page</li>
+                    <li>you can give sementhic meaning to your code</li>
+                </ul>
+                <details>
+                    <summary>You Are My Favorite Topic!</summary>
+                    <p>Hello and good morning at <time datetime="08:00">8 am</time> and i'm wake about <time datetime="PT3H">2 Hourse</time></p>
+                </details>
+                <img src="./asset/image_1.jpg" alt="nature" title="True in nature" width="488" height="325" />
+                <ul>
+                    <li><a href="https://google.com" target="_balank">Google</a></li>
+                    <li><a href="./asset/image_1.jpg" download>Download Image</a></li>
+                    <li><a href="mailto:mr.msnh.s@gmail.com">My Email</a></li>
+                    <li><a href="tel:+989026091228">Call Me</a></li>
+                </ul>
+            </section>
+            <aside id="css">
+                <h2>Learning CSS</h2>
+                <p>You can make your website <strong>pretty</strong> by adding CSS to it.</p>
+                <h3>Things you can do with CSS:</h3>
+                <ol>
+                    <li>Give color and format text</li>
+                    <li>Change main behavior of a element</li>
+                    <li>Reshape and reorder</li>
+                    <li>and ...</li>
+                    <li><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></li>
+                </ol>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <section id="javascript">
+            <h2>Learning JavaScript</h2>
+            <dl>
+                <dt>Basic of How performe</dt>
                 <dd>Potenial of a website</dd>
-            <dt>it's diffrent then JAVA</dt>
+                <dt>it's diffrent then JAVA</dt>
                 <dd>don't get confuse</dd>
-        </dl>
+            </dl>
 
-        <figure>
-            <img src="./asset/image_4.jpg" alt="tree world" title="Oxygen in treee" width="500" height="360" loading="lazy" />
-            <figcaption>this is the best title ever</figcaption>
-        </figure>
-        <address>
-            the world wide web <br />
-            behinde the world domination
-        </address>
-    </section>
+            <figure>
+                <img src="./asset/image_4.jpg" alt="tree world" title="Oxygen in treee" width="500" height="360"
+                    loading="lazy" />
+                <figcaption>this is the best title ever</figcaption>
+            </figure>
+            <address>
+                the world wide web <br />
+                behinde the world domination
+            </address>
+        </section>
+    </footer>
 
 </body>
 <script type="text/javascript" src="./script.js"></script>
+
 </html>

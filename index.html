@@ -44,7 +44,7 @@
                 </details>
                 <img src="./asset/image_1.jpg" alt="nature" title="True in nature" width="488" height="325" />
                 <ul>
-                    <li><a href="https://google.com" target="_balank">Google</a></li>
+                    <li><a href="https://google.com" target="_blank">Google</a></li>
                     <li><a href="./asset/image_1.jpg" download>Download Image</a></li>
                     <li><a href="mailto:mr.msnh.s@gmail.com">My Email</a></li>
                     <li><a href="tel:+989026091228">Call Me</a></li>
@@ -75,7 +75,8 @@
                             <td>Writing Code!</td>
                         </tr>
                         <tr>
-                            <td rowspan="2"><time datetime="12:00">12:00</time> - <time datetime="15:00">15:00</time></td>
+                            <td rowspan="2"><time datetime="12:00">12:00</time> - <time datetime="15:00">15:00</time>
+                            </td>
                             <td>Eating Lunch</td>
                         </tr>
                         <tr>
@@ -89,6 +90,79 @@
                     </tfoot>
                 </table>
             </aside>
+            <hr />
+            <section>
+                <form action="./index.html" method="GET">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div>
+                            <label for="Username">username:</label>
+                            <input type="text" id="Username" name="txtUsername" placeholder="Enter your username..."
+                                autocomplete="on" required autofocus />
+                        </div>
+                        <div>
+                            <label for="Password">Password:</label>
+                            <input type="password" id="Password" name="txtPassword" placeholder="Enter your password..."
+                                required />
+                        </div>
+                        <div>
+                            <label for="Phone">Phone:</label>
+                            <input type="tel" id="Phone" name="txtPhone" placeholder="555-555-5555"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                        </div>
+                        <div>
+                            <label for="Number">Number:</label>
+                            <input type="number" id="Number" name="txtNumber" value="10" min="10" max="100" step="10"
+                                required />
+                        </div>
+                        <div>
+                            <label for="SelectList">Select:</label>
+                            <select name="selectList" id="SelectList" multiple size="5">
+                                <optgroup label="Food">
+                                    <option value="Pizza">Pizza</option>
+                                    <option value="Spageti" selected>Spageti</option>
+                                </optgroup>
+                                <optgroup label="General">
+                                    <option value="Other">Other</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="SelectiveText">Select your city:</label>
+                            <input type="text" name="txtSelectiveText" id="SelectiveText" list="city-list" />
+                            <datalist id="city-list">
+                                <option value="Qom"></option>
+                                <option value="Tehran"></option>
+                                <option value="Other"></option>
+                            </datalist>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Selecet</legend>
+                        <div>
+                            <input type="radio" name="radioAge" id="age-1" value="18" />
+                            <label for="age-1">18</label>
+                            <input type="radio" name="radioAge" id="age-2" value="19" />
+                            <label for="age-2">19</label>
+                            <input type="radio" name="radioAge" id="age-3" value="20" />
+                            <label for="age-3">20</label>
+                        </div>
+                        <br />
+                        <div>
+                            <input type="checkbox" name="animal" id="cat" value="cat" />
+                            <label for="cat">cat</label>
+                            <input type="checkbox" name="animal" id="dog" value="dog" />
+                            <label for="dog">dog</label>
+                            <input type="checkbox" name="animal" id="fish" value="fish" />
+                            <label for="fish">fish</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="submit" />
+                    <input type="submit" value="submit somewhre else" formaction="https://httpbin.org/post"
+                        formmethod="post" />
+                    <input type="reset" value="reset" />
+                </form>
+            </section>
         </article>
     </main>
     <footer>
@@ -113,7 +187,7 @@
         </section>
     </footer>
 
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-<script type="text/javascript" src="./script.js"></script>
 
 </html>

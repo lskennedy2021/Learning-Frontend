@@ -44,7 +44,7 @@
                 </details>
                 <img src="./asset/image_1.jpg" alt="nature" title="True in nature" width="488" height="325" />
                 <ul>
-                    <li><a href="https://google.com" target="_balank">Google</a></li>
+                    <li><a href="https://google.com" target="_blank">Google</a></li>
                     <li><a href="./asset/image_1.jpg" download>Download Image</a></li>
                     <li><a href="mailto:mr.msnh.s@gmail.com">My Email</a></li>
                     <li><a href="tel:+989026091228">Call Me</a></li>
@@ -92,9 +92,9 @@
             </aside>
             <hr />
             <section>
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <form action="./index.html" method="GET">
+                <form action="./index.html" method="GET">
+                    <fieldset>
+                        <legend>Personal Information</legend>
                         <div>
                             <label for="Username">username:</label>
                             <input type="text" id="Username" name="txtUsername" placeholder="Enter your username..."
@@ -129,38 +129,37 @@
                         </div>
                         <div>
                             <label for="SelectiveText">Select your city:</label>
-                            <input type="text" name="txtSelectiveText" id="SeletiveText" list="city-list" />
+                            <input type="text" name="txtSelectiveText" id="SelectiveText" list="city-list" />
                             <datalist id="city-list">
                                 <option value="Qom"></option>
                                 <option value="Tehran"></option>
                                 <option value="Other"></option>
                             </datalist>
                         </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Selecet</legend>
                         <div>
+                            <input type="radio" name="radioAge" id="age-1" value="18" />
+                            <label for="age-1">18</label>
+                            <input type="radio" name="radioAge" id="age-2" value="19" />
+                            <label for="age-2">19</label>
+                            <input type="radio" name="radioAge" id="age-3" value="20" />
+                            <label for="age-3">20</label>
                         </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Selecet</legend>
-                    <div>
-                        <input type="radio" name="radioAge" id="age-1" value="18" />
-                        <label for="age-1">18</label>
-                        <input type="radio" name="radioAge" id="age-2" value="19" />
-                        <label for="age-2">19</label>
-                        <input type="radio" name="radioAge" id="age-3" value="20" />
-                        <label for="age-3">20</label>
-                    </div>
-                    <br />
-                    <div>
-                        <input type="checkbox" name="animal" id="cat" value="cat" />
-                        <label for="cat">cat</label>
-                        <input type="checkbox" name="animal" id="dog" value="dog" />
-                        <label for="dog">dog</label>
-                        <input type="checkbox" name="animal" id="fish" value="fish" />
-                        <label for="fish">fish</label>
-                    </div>
-                </fieldset>
+                        <br />
+                        <div>
+                            <input type="checkbox" name="animal" id="cat" value="cat" />
+                            <label for="cat">cat</label>
+                            <input type="checkbox" name="animal" id="dog" value="dog" />
+                            <label for="dog">dog</label>
+                            <input type="checkbox" name="animal" id="fish" value="fish" />
+                            <label for="fish">fish</label>
+                        </div>
+                    </fieldset>
                     <input type="submit" value="submit" />
-                    <input type="submit" value="submit somewhre else" formaction="https://httpbin.org/post" formmethod="post"/>
+                    <input type="submit" value="submit somewhre else" formaction="https://httpbin.org/post"
+                        formmethod="post" />
                     <input type="reset" value="reset" />
                 </form>
             </section>
